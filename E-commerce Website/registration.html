@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/mystyle.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav_links"">
+      <ul class="">
+        <li><a href="">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#">SignIn</a></li>
+        <li><a href="#">SignUp</a></li>
+      </ul>
+    </nav>
+
+    <h1>Sign up Now!</h1>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required /> <br />
+      <br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required /> <br />
+      <br />
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        required
+      />
+      <br />
+      <br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label>What are you here for?</label><br />
+      <input type="radio" name="position" value="Buyer" /> Buyer<br />
+      <input type="radio" name="position" value="Seller" /> Seller<br />
+      <input type="radio" name="position" value="Both" /> Both<br />
+
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>

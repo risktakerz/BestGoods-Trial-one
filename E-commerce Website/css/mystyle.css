@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: grey;
+  padding: 25px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.nav_links {
+  list-style: inside;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 40px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: skyblue;
+}
+
+.nav_links {
+  border: 1rem;
+}
+nav a:hover {
+  background-color: rgb(76, 74, 74);
+  padding: 20px 100px;
+}
+
+#homepagepic {
+  border-style: dotted;
+  margin: auto;
+}
+
+#hd1 {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  gap: 20px; /* Adjust the gap value as needed */
+}
+
+.container {
+  padding: 20px;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+.layout {
+  width: 100%;
+
+  display: grid;
+  grid:
+    ". . ." 1fr
+    ". . ." 1fr
+    ". . contact" 1fr
+    / 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.contact {
+  grid-area: contact;
+}

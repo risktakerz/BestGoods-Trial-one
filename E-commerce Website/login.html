@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/mystyle.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav_links">
+      <ul class="">
+        <li><a href="">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#">SignIn</a></li>
+        <li><a href="#">SignUp</a></li>
+      </ul>
+    </nav>
+    <main class="container mt-4">
+      <div class="card p-4 bg-body-tertiary" style="width: 30rem">
+        <form>
+          <div class="mb-3">
+            <label class="form-label" for="username">Username</label>
+            <input id="username" class="form-control" type="text" required />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="password">Password</label>
+            <input
+              id="password"
+              class="form-control"
+              type="password"
+              required
+              pattern="( ?=.* \d)( ?=.* [a-z])( ?=.* [A-Z])( ?=.* \W).{8,}"
+            />
+            <div class="form-text">
+              Password must be:
+              <ul>
+                <li>At least 8 characters</li>
+                <li>At least one uppercase letter</li>
+                <li>At least one lowercase letter</li>
+                <li>At least one number</li>
+                <li>At least one special character</li>
+              </ul>
+            </div>
+            <label for=""></label>
+            <input type="checkbox" name="" id="" />
+          </div>
+          <button class="btn btn-primary">Sign In</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
