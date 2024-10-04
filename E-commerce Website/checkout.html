@@ -2,19 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=\, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/mystyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/mystyle.css" />
   </head>
   <body>
-    <nav class="nav_links">
-      <ul>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="checkout.html">Cart</a></li>
-        <li><a href="login.html">SignIn</a></li>
-        <li><a href="registration.html">SignUp</a></li>
+    <nav>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="checkout.html">Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">SignIn</a>
+        </li>
       </ul>
     </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h3 class="mb-3">Customer Information</h3>
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h3 class="mb-3">Order Summary</h3>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Product 1</h6>
+                <small class="text-muted">Description</small>
+              </div>
+              <span class="text-muted">$19.99</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Total</h6>
+              </div>
+              <span class="text-muted">$49.98</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

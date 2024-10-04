@@ -3,7 +3,6 @@
 }
 
 nav {
-  background-color: grey;
   padding: 25px;
 }
 
@@ -28,7 +27,7 @@ header {
 }
 
 .nav_links li a {
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 2s;
 }
 
 .nav_links li a:hover {
@@ -81,4 +80,10 @@ nav a:hover {
 
 .contact {
   grid-area: contact;
+}
+
+.nav-link {
+  list-style: inside;
+  text-decoration: none;
+  color: black;
 }
